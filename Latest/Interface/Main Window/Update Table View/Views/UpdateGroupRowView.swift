@@ -14,15 +14,6 @@ class UpdateGroupRowView: NSTableRowView {
 	// Prevent any row view drawing
 	override func draw(_ dirtyRect: NSRect) {}
 	
-    override func layout() {
-        super.layout()
-    
-		// Make the cell as big as the row view
-        self.subviews.forEach { (view) in
-            view.frame = self.bounds
-		}
-    }
-    
 	// Make sure the display of the row is not altered in any way
 	override var isGroupRowStyle: Bool {
 		get {
