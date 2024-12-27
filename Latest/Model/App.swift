@@ -111,7 +111,7 @@ extension App {
 	
 	/// Whether the app can be updated within Latest.
 	var supported: Bool {
-		return self.source != .unsupported
+		return self.source != .none
 	}
 	
 	/// The date of the app when it was last updated.

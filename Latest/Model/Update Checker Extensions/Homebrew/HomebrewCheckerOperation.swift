@@ -12,7 +12,7 @@ import Cocoa
 class HomebrewCheckerOperation: StatefulOperation, UpdateCheckerOperation {
 	
 	static var sourceType: App.Source {
-		return .unsupported
+		return .none
 	}
 	
 	/// The bundle to be checked for updates.

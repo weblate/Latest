@@ -13,7 +13,7 @@ extension App {
 	/// The source of update information.
 	enum Source: String, Equatable {
 		/// No known source had information about this app. It is unsupported by the update checker.
-		case unsupported
+		case none
 		
 		/// The Sparkle Updater is the update source.
 		case sparkle
@@ -27,7 +27,7 @@ extension App {
 		/// The icon representing the source.
 		var sourceIcon: NSImage? {
 			switch self {
-			case .unsupported:
+			case .none:
 				return nil
 			case .sparkle:
 				return NSImage(named: "sparkle")
@@ -41,7 +41,7 @@ extension App {
 		/// The name of the source.
 		var sourceName: String? {
 			switch self {
-			case .unsupported:
+			case .none:
 				return nil
 			case .sparkle:
 				return NSLocalizedString("WebSource", comment: "The source name for apps loaded from third-party websites.")
@@ -52,7 +52,31 @@ extension App {
 				
 			}
 		}
+	}
+}
+
+extension App.Source {
+	/// Possible states for whether a source is supported by the app.
+	enum SupportState {
+		/// The source is fully supported, including in-app updates.
+		case full
 		
+		/// There is some update information available, but it may be incomplete. In-app updates do not work.
+		case limited
+		
+		/// The source is unknown and no update information is available.
+		case none
 	}
 	
+	/// Whether the source is supported by the app.
+	var supportState: SupportState {
+		switch self {
+		case .none:
+			return .none
+		case .sparkle, .appStore:
+			return .full
+		case .homebrew:
+			return .limited
+		}
+	}
 }
