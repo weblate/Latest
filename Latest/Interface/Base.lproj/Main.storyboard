@@ -593,10 +593,10 @@
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <visualEffectView blendingMode="behindWindow" material="sidebar" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="DVj-Eq-QBv">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="28"/>
+                                                                    <rect key="frame" x="-14" y="0.0" width="414" height="28"/>
                                                                     <subviews>
                                                                         <textField wantsLayer="YES" focusRingType="none" horizontalHuggingPriority="20" verticalHuggingPriority="750" horizontalCompressionResistancePriority="20" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhF-6m-YCA">
-                                                                            <rect key="frame" x="4" y="6" width="358" height="16"/>
+                                                                            <rect key="frame" x="18" y="6" width="358" height="16"/>
                                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" title="&lt;dnl&gt;" allowsEditingTextAttributes="YES" id="NNm-bC-QYz">
                                                                                 <font key="font" metaFont="system"/>
                                                                                 <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
@@ -606,7 +606,7 @@
                                                                     </subviews>
                                                                     <constraints>
                                                                         <constraint firstItem="xhF-6m-YCA" firstAttribute="top" secondItem="DVj-Eq-QBv" secondAttribute="top" constant="6" id="Bvy-aH-476"/>
-                                                                        <constraint firstItem="xhF-6m-YCA" firstAttribute="leading" secondItem="DVj-Eq-QBv" secondAttribute="leading" constant="6" id="WgZ-5m-bcs"/>
+                                                                        <constraint firstItem="xhF-6m-YCA" firstAttribute="leading" secondItem="DVj-Eq-QBv" secondAttribute="leading" constant="20" id="WgZ-5m-bcs"/>
                                                                         <constraint firstAttribute="bottom" secondItem="xhF-6m-YCA" secondAttribute="bottom" constant="6" id="X00-7l-vwQ"/>
                                                                         <constraint firstAttribute="trailing" secondItem="xhF-6m-YCA" secondAttribute="trailing" constant="40" id="p42-fq-g7h"/>
                                                                     </constraints>
@@ -615,7 +615,7 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="trailing" secondItem="DVj-Eq-QBv" secondAttribute="trailing" constant="-20" id="QhD-5H-yqc"/>
                                                                 <constraint firstAttribute="bottom" secondItem="DVj-Eq-QBv" secondAttribute="bottom" id="chm-Rk-jh3"/>
-                                                                <constraint firstItem="DVj-Eq-QBv" firstAttribute="leading" secondItem="ZtS-Z9-Cu9" secondAttribute="leading" id="ltP-EW-8at"/>
+                                                                <constraint firstItem="DVj-Eq-QBv" firstAttribute="leading" secondItem="ZtS-Z9-Cu9" secondAttribute="leading" constant="-14" id="ltP-EW-8at"/>
                                                                 <constraint firstItem="DVj-Eq-QBv" firstAttribute="top" secondItem="ZtS-Z9-Cu9" secondAttribute="top" id="zDi-if-AoH"/>
                                                             </constraints>
                                                             <connections>
@@ -1222,7 +1222,7 @@
         <scene sceneID="d1P-e9-H2I">
             <objects>
                 <viewController title="General" showSeguePresentationStyle="single" id="JNL-bS-gzr" customClass="GeneralSettingsViewController" customModule="Latest" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" misplaced="YES" id="4Hf-JC-45B">
+                    <view key="view" id="4Hf-JC-45B">
                         <rect key="frame" x="0.0" y="0.0" width="305" height="98"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -1528,7 +1528,7 @@
         <image name="NSTouchBarDownloadTemplate" width="20" height="20"/>
         <image name="NSTouchBarRefreshTemplate" width="18" height="21"/>
         <image name="NSTouchBarSearchTemplate" width="20" height="20"/>
-        <image name="appstore" width="12" height="12"/>
+        <image name="appstore" width="16" height="16"/>
         <image name="externaldrive" catalog="system" width="18" height="13"/>
         <image name="gearshape" catalog="system" width="16" height="16"/>
     </resources>
