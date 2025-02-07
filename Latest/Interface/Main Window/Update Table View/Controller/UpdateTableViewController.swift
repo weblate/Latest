@@ -126,9 +126,6 @@ class UpdateTableViewController: NSViewController, NSMenuItemValidation, NSTable
 		cell.app = app
 		cell.filterQuery = self.snapshot.filterQuery
 
-		// Tint the icon if the app is not supported
-		cell.imageView?.alphaValue = (app.supported ? 1 : 0.5)
-        
         return cell
 	}
 	

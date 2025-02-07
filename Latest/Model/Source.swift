@@ -55,6 +55,8 @@ extension App {
 	}
 }
 
+// MARK: - Support State
+
 extension App.Source {
 	/// Possible states for whether a source is supported by the app.
 	enum SupportState {
@@ -77,6 +79,31 @@ extension App.Source {
 			return .full
 		case .homebrew:
 			return .limited
+		}
+	}
+}
+
+
+// MARK: Accessors
+
+extension App.Source.SupportState {
+	/// Returns an image using the system status indicator (colored dot) for the given status.
+	var statusImage: NSImage {
+		let name = switch self {
+		case .full: NSImage.statusAvailableName
+		case .limited: NSImage.statusPartiallyAvailableName
+		case .none: NSImage.statusUnavailableName
+		}
+		
+		return NSImage(named: name)!
+	}
+	
+	/// Returns a label briefly describing the given status.
+	var label: String {
+		switch self {
+		case .full: NSLocalizedString("Supported", comment: "A label used for apps which are fully supported by Latest.")
+		case .limited: NSLocalizedString("Limited support", comment: "A label used for apps which are partially supported by Latest.")
+		case .none: NSLocalizedString("Not supported", comment: "A label used for apps which are not supported by Latest.")
 		}
 	}
 }
