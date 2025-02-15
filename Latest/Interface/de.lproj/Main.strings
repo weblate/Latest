@@ -10,9 +10,6 @@
 /* Class = "NSMenuItem"; title = "Menu"; ObjectID = "1Z9-ws-FMW"; */
 "1Z9-ws-FMW.title" = "Menu";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "3GZ-aM-hwz"; */
-"3GZ-aM-hwz.title" = "Text Cell";
-
 /* Class = "NSMenuItem"; title = "Enter Full Screen"; ObjectID = "4J7-dP-txa"; */
 "4J7-dP-txa.title" = "Vollbildmodus";
 
@@ -27,9 +24,6 @@
 
 /* Class = "NSMenuItem"; title = "About Latest"; ObjectID = "5kV-Vb-QxS"; */
 "5kV-Vb-QxS.title" = "Über Latest";
-
-/* Class = "NSMenuItem"; title = "Show Unsupported Apps"; ObjectID = "6Cd-Qc-3Xc"; */
-"6Cd-Qc-3Xc.title" = "Nicht unterstützte Apps anzeigen";
 
 /* Class = "NSTextFieldCell"; title = "<dnl>"; ObjectID = "6va-ld-AXD"; */
 "6va-ld-AXD.title" = "<dnl>";
@@ -282,9 +276,6 @@
 
 /* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
 "Vdr-fp-XzO.title" = "Andere ausblenden";
-
-/* Class = "NSTextFieldCell"; title = "<dnl>"; ObjectID = "VX8-qg-UOL"; */
-"VX8-qg-UOL.title" = "<dnl>";
 
 /* Class = "NSMenuItem"; title = "Open"; ObjectID = "w14-Ia-4l9"; */
 "w14-Ia-4l9.title" = "Öffnen";

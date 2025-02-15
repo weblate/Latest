@@ -8,9 +8,6 @@
 /* Class = "NSMenuItem"; title = "Update"; ObjectID = "00n-xr-jcQ"; */
 "00n-xr-jcQ.title" = "Обновить";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "3GZ-aM-hwz"; */
-"3GZ-aM-hwz.title" = "Текстовая ячейка";
-
 /* Class = "NSMenuItem"; title = "Latest"; ObjectID = "1Xt-HY-uBw"; */
 "1Xt-HY-uBw.title" = "Latest";
 
@@ -137,9 +134,6 @@
 /* Class = "NSMenuItem"; title = "Data Detectors"; ObjectID = "65u-P1-4rd"; */
 "65u-P1-4rd.title" = "Детекторы данных";
 
-/* Class = "NSMenuItem"; title = "Show Unsupported Apps"; ObjectID = "6Cd-Qc-3Xc"; */
-"6Cd-Qc-3Xc.title" = "Показывать неподдерживаемые приложения";
-
 /* Class = "NSTextFieldCell"; title = "New Version"; ObjectID = "6YS-DP-XWA"; */
 "6YS-DP-XWA.title" = "<dnl>";
 
@@ -235,9 +229,6 @@
 
 /* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "UPY-HP-f2p"; */
 "UPY-HP-f2p.title" = "<dnl>";
-
-/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "VX8-qg-UOL"; */
-"VX8-qg-UOL.title" = "<dnl>";
 
 /* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
 "Vdr-fp-XzO.title" = "Скрыть остальные";
