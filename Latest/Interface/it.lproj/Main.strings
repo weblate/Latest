@@ -2,9 +2,6 @@
 /* Class = "NSMenuItem"; title = "Update"; ObjectID = "00n-xr-jcQ"; */
 "00n-xr-jcQ.title" = "Aggiorna";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "3GZ-aM-hwz"; */
-"3GZ-aM-hwz.title" = "Casella di testo";
-
 /* Class = "NSMenuItem"; title = "Quit Latest"; ObjectID = "4sb-4s-VLi"; */
 "4sb-4s-VLi.title" = "Esci da Latest";
 
@@ -16,9 +13,6 @@
 
 /* Class = "NSMenuItem"; title = "Correct Spelling Automatically"; ObjectID = "63s-Hc-NQY"; */
 "63s-Hc-NQY.title" = "Correggi ortografia automaticamente";
-
-/* Class = "NSMenuItem"; title = "Show Unsupported Apps"; ObjectID = "6Cd-Qc-3Xc"; */
-"6Cd-Qc-3Xc.title" = "Mostra applicazioni non supportate";
 
 /* Class = "NSMenuItem"; title = "Visit Latest-Website"; ObjectID = "7c2-6r-Saw"; */
 "7c2-6r-Saw.title" = "Visita il sito web di Latest";
@@ -79,9 +73,6 @@
 
 /* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
 "Td7-aD-5lo.title" = "Finestra";
-
-/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "VX8-qg-UOL"; */
-"VX8-qg-UOL.title" = "<dnl>";
 
 /* Class = "NSMenuItem"; title = "Show Installed Apps"; ObjectID = "XVu-eG-PUK"; */
 "XVu-eG-PUK.title" = "Mostra applicazioni installate";

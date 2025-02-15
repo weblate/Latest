@@ -29,9 +29,6 @@
 /* Class = "NSTextFieldCell"; title = "<dnl>"; ObjectID = "SVA-bh-cUe"; */
 "SVA-bh-cUe.title" = "<dnl>";
 
-/* Class = "NSTextFieldCell"; title = "<dnl>"; ObjectID = "VX8-qg-UOL"; */
-"VX8-qg-UOL.title" = "<dnl>";
-
 /* Class = "NSTextFieldCell"; title = "Current Version"; ObjectID = "h6g-FG-nGh"; */
 "h6g-FG-nGh.title" = "<dnl>";
 
@@ -52,9 +49,6 @@
 
 /* Class = "NSMenuItem"; title = "About Latest"; ObjectID = "5kV-Vb-QxS"; */
 "5kV-Vb-QxS.title" = "नवीन के बारे में";
-
-/* Class = "NSMenuItem"; title = "Show Unsupported Apps"; ObjectID = "6Cd-Qc-3Xc"; */
-"6Cd-Qc-3Xc.title" = "असमर्थित ऐप दिखाएँ";
 
 /* Class = "NSMenuItem"; title = "Visit Latest-Website"; ObjectID = "7c2-6r-Saw"; */
 "7c2-6r-Saw.title" = "नवीन वेबसाइट देखें";
@@ -148,9 +142,6 @@
 
 /* Class = "NSMenuItem"; title = "Menu"; ObjectID = "1Z9-ws-FMW"; */
 "1Z9-ws-FMW.title" = "मेनू";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "3GZ-aM-hwz"; */
-"3GZ-aM-hwz.title" = "टेक्सट सेल";
 
 /* Class = "NSMenuItem"; title = "Correct Spelling Automatically"; ObjectID = "63s-Hc-NQY"; */
 "63s-Hc-NQY.title" = "अपने आप स्पेलिंग ठीक करें";
