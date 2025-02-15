@@ -9,7 +9,7 @@
 import Foundation
 
 /// The queue where update operations are scheduled on.
-class UpdateQueue: OperationQueue {
+class UpdateQueue: OperationQueue, @unchecked Sendable {
 	
 	// MARK: - Initialization
 	private override init() {
