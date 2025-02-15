@@ -220,6 +220,15 @@ extension App {
 			
 			return nil
 		}
+
+		/// Returns version string by optionally combining the current and new version.
+		func combined(includeNew: Bool) -> String {
+			if let rawNew, includeNew, rawCurrent != rawNew {
+				String(format: NSLocalizedString("CombinedVersionFormat", comment: "Text for the current version number with option to update to a newer one, e.g. 'Version: 1.2.2 -> 1.2.3'. Has two parameters, the first being the current version, the second being the next version."), rawCurrent, rawNew)
+			} else {
+				String(format: NSLocalizedString("SingleCombinedVersionFormat", comment: "Text for the given version number, e.g. 'Version: 1.2.3'"), rawCurrent)
+			}
+		}
 		
 		fileprivate var rawCurrent: String
 		fileprivate var rawNew: String?

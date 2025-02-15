@@ -101,9 +101,18 @@ extension App.Source.SupportState {
 	/// Returns a label briefly describing the given status.
 	var label: String {
 		switch self {
-		case .full: NSLocalizedString("Supported", comment: "A label used for apps which are fully supported by Latest.")
-		case .limited: NSLocalizedString("Limited support", comment: "A label used for apps which are partially supported by Latest.")
-		case .none: NSLocalizedString("Not supported", comment: "A label used for apps which are not supported by Latest.")
+		case .full: NSLocalizedString("SupportedLabel", comment: "A label used for apps which are fully supported by Latest.")
+		case .limited: NSLocalizedString("LimitedSupportLabel", comment: "A label used for apps which are partially supported by Latest.")
+		case .none: NSLocalizedString("UnsupportedLabel", comment: "A label used for apps which are not supported by Latest.")
+		}
+	}
+	
+	/// A more compact version of the label describing the given status.
+	var compactLabel: String {
+		switch self {
+		case .full: NSLocalizedString("SupportedCompactLabel", comment: "A compact label used for apps which are fully supported by Latest.")
+		case .limited: NSLocalizedString("LimitedSupportCompactLabel", comment: "A compact label used for apps which are partially supported by Latest.")
+		case .none: NSLocalizedString("UnsupportedCompactLabel", comment: "A compact label used for apps which are not supported by Latest.")
 		}
 	}
 }

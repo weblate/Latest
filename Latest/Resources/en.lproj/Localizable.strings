@@ -55,6 +55,9 @@
 /* New Version String */
 "RemoteVersionFormat" = "New version: %@";
 
+/* Text for the current version number with option to update to a newer one, e.g. "Version: 1.2.2 -> 1.2.3". Has two parameters, the first being the current version, the second being the next version. */
+"CombinedVersionFormat" = "Version: %1$@ → %2$@";
+
 /* Title of release notes empty state */
 "NoAppSelectedTitle" = "No App Selected";
 
@@ -97,6 +100,9 @@
 /* Current Version String */
 "LocalVersionFormat" = "Your version: %@";
 
+/* Text for the given version number, e.g. "Version: 1.2.3" */
+"SingleCombinedVersionFormat" = "Version: %@";
+
 /* Error description when the attempt to update an app from the App Store failed because the user is not signed in with their App Store account. */
 "AppStoreNotSignedInError" = "Not Signed In";
 
@@ -111,3 +117,12 @@
 
 /* The source name for apps checked via the Homebrew package manager. */
 "HomebrewSource" = "Homebrew";
+
+/* Description for apps without support. */
+"NoSupportDescription" = "Update information is unavailable. Check the app or its website to manage updates.";
+
+/* Description for apps with limited support. */
+"LimitedSupportDescription" = "Update information is generally available but may sometimes be outdated or inaccurate. Updates cannot be performed directly here.";
+
+/* Description for apps with full support. */
+"FullSupportDescription" = "Fully supported. Reliable version information is available, and updates can be managed directly within the app.\n\nIf the shown version information is inaccurate, feel free to write an issue report.";
