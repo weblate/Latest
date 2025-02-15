@@ -62,12 +62,12 @@ struct AppListSnapshot {
 			}
 
 			// Filter unsupported apps
-			if !AppListSettings.shared.showUnsupportedUpdates && !app.supported {
+			if !AppListSettings.shared.includeUnsupportedApps && !app.supported {
 				return false
 			}
 			
 			// Filter apps not using the builtin updater
-			if !AppListSettings.shared.showExternalUpdates && app.updateAvailable && !app.usesBuiltInUpdater {
+			if !AppListSettings.shared.includeAppsWithLimitedSupport && app.updateAvailable && !app.usesBuiltInUpdater {
 				return false
 			}
 			

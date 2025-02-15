@@ -36,6 +36,9 @@ class UpdateCell: NSTableCellView {
 	/// The button handling the update of the app.
 	@IBOutlet private weak var updateButton: UpdateButton!
 	
+	/// Image view displaying a status indicator for the support status of the app.
+	@IBOutlet private weak var supportStateImageView: NSImageView!
+	
 	override func awakeFromNib() {
 		super.awakeFromNib()
 		
@@ -46,18 +49,26 @@ class UpdateCell: NSTableCellView {
 		}
 	}
 	
-    override var backgroundStyle: NSView.BackgroundStyle {
-        didSet {
-			self.updateTextColors()
-		}
-    }
-		
 	
 	// MARK: - Update Progress
 	
 	/// The app represented by this cell
 	var app: App? {
+		willSet {
+			// Remove observer from existing app
+			if let app = self.app {
+				UpdateQueue.shared.removeObserver(self, for: app.identifier)
+			}
+		}
+		
 		didSet {
+			if let app = self.app {
+				UpdateQueue.shared.addObserver(self, to: app.identifier) { [weak self] progress in
+					guard let self = self else { return }
+					self.supportStateImageView.isHidden = !self.showSupportState
+				}
+			}
+		
 			self.updateButton.app = self.app
 			self.updateContents()
 		}
@@ -94,19 +105,28 @@ class UpdateCell: NSTableCellView {
 		self.newVersionTextField.stringValue = versionInformation.new ?? ""
         self.newVersionTextField.isHidden = !app.updateAvailable
 		self.dateTextField.stringValue = dateFormatter.string(from: app.updateDate)
+		
+		// Support state
+		supportStateImageView.isHidden = !showSupportState
+		if showSupportState {
+			supportStateImageView.image = app.source.supportState.statusImage
+			supportStateImageView.toolTip = app.source.supportState.label
+		}
+	}
+	
+	/// Whether the status indicator for the apps support state should be visible.
+	private var showSupportState: Bool {
+		guard let app else { return false }
+		
+		let isUpdating = switch UpdateQueue.shared.state(for: app.identifier) {
+		case .none, .error: false
+		default : true
+		}
+		
+		return !isUpdating && (AppListSettings.shared.includeAppsWithLimitedSupport || AppListSettings.shared.includeUnsupportedApps)
 	}
 	    
 	private func updateTitle() {
 		self.nameTextField.attributedStringValue = self.app?.highlightedName(for: self.filterQuery) ?? NSAttributedString()
-	}
-	
-	private func updateTextColors() {
-		// Tint the name if the app is not supported
-		let supported = self.app?.supported ?? false
-		
-		self.nameTextField.textColor = (self.backgroundStyle == .emphasized ? .alternateSelectedControlTextColor : (supported ? .labelColor : .tertiaryLabelColor))
-		self.currentVersionTextField.textColor = (supported ? .secondaryLabelColor : .tertiaryLabelColor)
-		self.newVersionTextField.textColor = (supported ? .secondaryLabelColor : .tertiaryLabelColor)
-		self.dateTextField.textColor = (supported ? .secondaryLabelColor : .tertiaryLabelColor)
 	}
 }

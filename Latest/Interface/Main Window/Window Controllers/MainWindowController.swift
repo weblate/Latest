@@ -56,10 +56,10 @@ class MainWindowController: NSWindowController, NSMenuItemValidation, NSMenuDele
     
 		self.window?.titlebarAppearsTransparent = true
 		self.window?.setFrameAutosaveName("MainWindow")
+		self.window?.title = Bundle.main.localizedInfoDictionary?[kCFBundleNameKey as String] as! String
 
 		if #available(macOS 11.0, *) {
 			self.window?.toolbarStyle = .unified
-			self.window?.title = Bundle.main.localizedInfoDictionary?[kCFBundleNameKey as String] as! String
 		} else {
 			self.window?.titleVisibility = .hidden
 		}
@@ -149,10 +149,6 @@ class MainWindowController: NSWindowController, NSMenuItemValidation, NSMenuDele
                 menuItem.state = AppListSettings.shared.showInstalledUpdates ? .on : .off
 			case #selector(toggleShowIgnoredUpdates(_:)):
                 menuItem.state = AppListSettings.shared.showIgnoredUpdates ? .on : .off
-			case #selector(toggleShowUnsupportedUpdates(_:)):
-				menuItem.state = AppListSettings.shared.showUnsupportedUpdates ? .on : .off
-			case #selector(toggleShowExternalUpdates(_:)):
-				menuItem.state = AppListSettings.shared.showExternalUpdates ? .on : .off
             default:
                 ()
             }
@@ -216,14 +212,6 @@ class MainWindowController: NSWindowController, NSMenuItemValidation, NSMenuDele
 	
 	@IBAction func toggleShowIgnoredUpdates(_ sender: NSMenuItem?) {
 		AppListSettings.shared.showIgnoredUpdates.toggle()
-	 }
-	
-	@IBAction func toggleShowUnsupportedUpdates(_ sender: NSMenuItem?) {
-		AppListSettings.shared.showUnsupportedUpdates.toggle()
-	}
-
-	@IBAction func toggleShowExternalUpdates(_ sender: NSMenuItem?) {
-		AppListSettings.shared.showExternalUpdates.toggle()
 	}
 
 	

@@ -31,6 +31,7 @@
 		504FB4AC2B76CA77009C73E9 /* AppLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504FB4AB2B76CA77009C73E9 /* AppLocationViewController.swift */; };
 		5058BA3A21202BA7003F332B /* IconCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5058BA3921202BA7003F332B /* IconCache.swift */; };
 		5058E9C327863FC80028F564 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5058E9C227863FC80028F564 /* App.swift */; };
+		506A77172D6099FE00A69579 /* SupportStatusInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506A77162D6099F400A69579 /* SupportStatusInfoViewController.swift */; };
 		506A8F6722EC14CC00C755AF /* LatestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506A8F6622EC14CC00C755AF /* LatestError.swift */; };
 		506DF77621248F6200D792FC /* AppDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506DF77521248F6200D792FC /* AppDataStore.swift */; };
 		506DF7782125580400D792FC /* UpdateTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506DF7772125580400D792FC /* UpdateTableView.swift */; };
@@ -41,6 +42,7 @@
 		508323E4257824AA000BBA13 /* UpdateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508323E1257824A9000BBA13 /* UpdateButton.swift */; };
 		508323E5257824AA000BBA13 /* UpdateButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508323E2257824AA000BBA13 /* UpdateButtonCell.swift */; };
 		5087CD2D22F6E06B0013354C /* SparkleUpdateOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087CD2C22F6E06B0013354C /* SparkleUpdateOperation.swift */; };
+		508A40552D56962400A02DF1 /* SupportStatusButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508A40542D56961400A02DF1 /* SupportStatusButtonCell.swift */; };
 		5093EF9C2B913A1C0041E6C1 /* AppDirectoryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5093EF9B2B913A1C0041E6C1 /* AppDirectoryCellView.swift */; };
 		509512141FF362A1003D2D7F /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509512101FF362A1003D2D7F /* Version.swift */; };
 		509512151FF362A1003D2D7F /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509512111FF362A1003D2D7F /* Update.swift */; };
@@ -62,6 +64,8 @@
 		50BC19E328230D41005945E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 502217992804BB330043366B /* InfoPlist.strings */; };
 		50BEF14C2AC2CB110052C417 /* WebContentLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BEF14B2AC2CB110052C417 /* WebContentLoader.swift */; };
 		50BEF14E2AC972B40052C417 /* UpdateRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BEF14D2AC972B40052C417 /* UpdateRepository.swift */; };
+		50C59D692D1F182B005BC36B /* SettingsTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C59D682D1F182B005BC36B /* SettingsTabViewController.swift */; };
+		50C59D6D2D1F54BF005BC36B /* GeneralSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C59D6C2D1F54B5005BC36B /* GeneralSettingsViewController.swift */; };
 		50C81D741FBADC9100324C2E /* VersionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C81D731FBADC9100324C2E /* VersionTest.swift */; };
 		50C857402B25CF7500F5BF0B /* UpdateRepositoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C8573F2B25CF7500F5BF0B /* UpdateRepositoryCache.swift */; };
 		50C8C85C208A0EE9004FF5D5 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 50C8C85B208A0EE9004FF5D5 /* dsa_pub.pem */; };
@@ -190,6 +194,7 @@
 		5053E6DE2A98AF20008B18D0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.stringsdict"; sourceTree = "<group>"; };
 		5058BA3921202BA7003F332B /* IconCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCache.swift; sourceTree = "<group>"; };
 		5058E9C227863FC80028F564 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		506A77162D6099F400A69579 /* SupportStatusInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportStatusInfoViewController.swift; sourceTree = "<group>"; };
 		506A8F6622EC14CC00C755AF /* LatestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestError.swift; sourceTree = "<group>"; };
 		506DF77521248F6200D792FC /* AppDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataStore.swift; sourceTree = "<group>"; };
 		506DF7772125580400D792FC /* UpdateTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTableView.swift; sourceTree = "<group>"; };
@@ -204,6 +209,7 @@
 		508323E1257824A9000BBA13 /* UpdateButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateButton.swift; sourceTree = "<group>"; };
 		508323E2257824AA000BBA13 /* UpdateButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateButtonCell.swift; sourceTree = "<group>"; };
 		5087CD2C22F6E06B0013354C /* SparkleUpdateOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkleUpdateOperation.swift; sourceTree = "<group>"; };
+		508A40542D56961400A02DF1 /* SupportStatusButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportStatusButtonCell.swift; sourceTree = "<group>"; };
 		5093EF9B2B913A1C0041E6C1 /* AppDirectoryCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDirectoryCellView.swift; sourceTree = "<group>"; };
 		5094821C27C19E4A00EC6B6B /* CFBundle_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFBundle_Private.h; sourceTree = "<group>"; };
 		5094823327C19F5800EC6B6B /* Latest Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Latest Bridging_Header.h"; sourceTree = "<group>"; };
@@ -254,6 +260,8 @@
 		50C36370287A22E4003965E1 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50C36371287A22E4003965E1 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = pt; path = pt.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		50C36372287A22E5003965E1 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		50C59D682D1F182B005BC36B /* SettingsTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTabViewController.swift; sourceTree = "<group>"; };
+		50C59D6C2D1F54B5005BC36B /* GeneralSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsViewController.swift; sourceTree = "<group>"; };
 		50C81D691FBADC5900324C2E /* Latest Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Latest Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C81D6D1FBADC5900324C2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50C81D731FBADC9100324C2E /* VersionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionTest.swift; sourceTree = "<group>"; };
@@ -395,7 +403,6 @@
 		502929F8212062A100F00D1C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				509512311FF36380003D2D7F /* ReleaseNotesViewController.swift */,
 				502929FA21206BC800F00D1C /* ReleaseNotesContentProtocol.swift */,
 				502929EE2120621B00F00D1C /* ReleaseNotesTextViewController.swift */,
 				502929F02120623100F00D1C /* ReleaseNotesErrorViewController.swift */,
@@ -444,8 +451,9 @@
 		504FB4AA2B76CA3B009C73E9 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				504FB4AB2B76CA77009C73E9 /* AppLocationViewController.swift */,
-				5093EF9B2B913A1C0041E6C1 /* AppDirectoryCellView.swift */,
+				50C59D682D1F182B005BC36B /* SettingsTabViewController.swift */,
+				50C59D6A2D1F1AEE005BC36B /* General */,
+				50C59D6B2D1F1AF7005BC36B /* Locations */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -469,9 +477,20 @@
 		5058BA36211F9F49003F332B /* Release Notes */ = {
 			isa = PBXGroup;
 			children = (
+				506A77152D6099E700A69579 /* SupportState */,
+				509512311FF36380003D2D7F /* ReleaseNotesViewController.swift */,
 				502929F8212062A100F00D1C /* Controller */,
 			);
 			path = "Release Notes";
+			sourceTree = "<group>";
+		};
+		506A77152D6099E700A69579 /* SupportState */ = {
+			isa = PBXGroup;
+			children = (
+				506A77162D6099F400A69579 /* SupportStatusInfoViewController.swift */,
+				508A40542D56961400A02DF1 /* SupportStatusButtonCell.swift */,
+			);
+			path = SupportState;
 			sourceTree = "<group>";
 		};
 		507375552789AA7C00F371D8 /* Utilities */ = {
@@ -599,6 +618,23 @@
 				50BEF14B2AC2CB110052C417 /* WebContentLoader.swift */,
 			);
 			path = "View Model";
+			sourceTree = "<group>";
+		};
+		50C59D6A2D1F1AEE005BC36B /* General */ = {
+			isa = PBXGroup;
+			children = (
+				50C59D6C2D1F54B5005BC36B /* GeneralSettingsViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		50C59D6B2D1F1AF7005BC36B /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				504FB4AB2B76CA77009C73E9 /* AppLocationViewController.swift */,
+				5093EF9B2B913A1C0041E6C1 /* AppDirectoryCellView.swift */,
+			);
+			path = Locations;
 			sourceTree = "<group>";
 		};
 		50C81D6A1FBADC5900324C2E /* Tests */ = {
@@ -903,8 +939,10 @@
 				50BEF14E2AC972B40052C417 /* UpdateRepository.swift in Sources */,
 				50B5A50421246E2500E96AEC /* UpdateGroupRowView.swift in Sources */,
 				5058E9C327863FC80028F564 /* App.swift in Sources */,
+				50C59D692D1F182B005BC36B /* SettingsTabViewController.swift in Sources */,
 				509512221FF36301003D2D7F /* Bundle.swift in Sources */,
 				508323E3257824AA000BBA13 /* DisplayLink.swift in Sources */,
+				508A40552D56962400A02DF1 /* SupportStatusButtonCell.swift in Sources */,
 				5058BA3A21202BA7003F332B /* IconCache.swift in Sources */,
 				5040D45C28DBB753009BF379 /* HomebrewCheckerOperation.swift in Sources */,
 				5093EF9C2B913A1C0041E6C1 /* AppDirectoryCellView.swift in Sources */,
@@ -933,6 +971,7 @@
 				5073753F278998A300F371D8 /* AppLibrary.swift in Sources */,
 				502929F22120623100F00D1C /* ReleaseNotesErrorViewController.swift in Sources */,
 				506DF77621248F6200D792FC /* AppDataStore.swift in Sources */,
+				506A77172D6099FE00A69579 /* SupportStatusInfoViewController.swift in Sources */,
 				50BBF3FF2B21120200AB4D26 /* UpdateRepository+Entry.swift in Sources */,
 				5039DE8522CA396F0088B39B /* UpdateQueue.swift in Sources */,
 				50DAEF4421047FA900B32E8A /* UpdateItemView.swift in Sources */,
@@ -944,6 +983,7 @@
 				50B016982C38986300590339 /* AppDirectoryStore.swift in Sources */,
 				509512151FF362A1003D2D7F /* Update.swift in Sources */,
 				5087CD2D22F6E06B0013354C /* SparkleUpdateOperation.swift in Sources */,
+				50C59D6D2D1F54BF005BC36B /* GeneralSettingsViewController.swift in Sources */,
 				50C857402B25CF7500F5BF0B /* UpdateRepositoryCache.swift in Sources */,
 				50A8D2B327D2B063004DBA05 /* ReleaseNotesProvider.swift in Sources */,
 				509C4ABC2AD1FFCC00E9C2E1 /* FailableDecodable.swift in Sources */,

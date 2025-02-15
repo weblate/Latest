@@ -9,7 +9,7 @@
 import AppKit
 
 /// View displaying a list of directories to be checked for apps with updates.
-class AppDirectoryViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
+class AppDirectoryViewController: SettingsTabItemViewController, NSTableViewDataSource, NSTableViewDelegate {
 	
 	// MARK: - View Lifecycle
 	

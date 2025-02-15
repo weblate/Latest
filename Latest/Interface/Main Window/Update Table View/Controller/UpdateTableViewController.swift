@@ -126,9 +126,6 @@ class UpdateTableViewController: NSViewController, NSMenuItemValidation, NSTable
 		cell.app = app
 		cell.filterQuery = self.snapshot.filterQuery
 
-		// Tint the icon if the app is not supported
-		cell.imageView?.alphaValue = (app.supported ? 1 : 0.5)
-        
         return cell
 	}
 	
@@ -474,7 +471,7 @@ class UpdateTableViewController: NSViewController, NSMenuItemValidation, NSTable
     
     /// Updates the title in the toolbar ("No / n updates available") and the badge of the app icon
     private func updateTitleAndBatch() {
-		let showExternalUpdates = AppListSettings.shared.showExternalUpdates
+		let showExternalUpdates = AppListSettings.shared.includeAppsWithLimitedSupport
 		let count = UpdateCheckCoordinator.shared.appProvider.countOfAvailableUpdates(where: { showExternalUpdates || $0.usesBuiltInUpdater })
 		let statusText: String
 		
