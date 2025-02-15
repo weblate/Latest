@@ -56,10 +56,10 @@ class MainWindowController: NSWindowController, NSMenuItemValidation, NSMenuDele
     
 		self.window?.titlebarAppearsTransparent = true
 		self.window?.setFrameAutosaveName("MainWindow")
+		self.window?.title = Bundle.main.localizedInfoDictionary?[kCFBundleNameKey as String] as! String
 
 		if #available(macOS 11.0, *) {
 			self.window?.toolbarStyle = .unified
-			self.window?.title = Bundle.main.localizedInfoDictionary?[kCFBundleNameKey as String] as! String
 		} else {
 			self.window?.titleVisibility = .hidden
 		}
