@@ -45,6 +45,7 @@ class UpdateGroupCellView: NSTableCellView {
 					.characterEncoding: String.Encoding.utf8.rawValue
 				  ], documentAttributes: nil) else {
 				assertionFailure("Localized string could not be loaded.")
+				self.titleField.stringValue = section.title
 				return
 			}
 			
