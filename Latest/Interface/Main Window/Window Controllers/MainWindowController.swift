@@ -55,7 +55,6 @@ class MainWindowController: NSWindowController, NSMenuItemValidation, NSMenuDele
         super.windowDidLoad()
     
 		self.window?.titlebarAppearsTransparent = true
-		self.window?.setFrameAutosaveName("MainWindow")
 		self.window?.title = Bundle.main.localizedInfoDictionary?[kCFBundleNameKey as String] as! String
 
 		if #available(macOS 11.0, *) {
@@ -71,7 +70,6 @@ class MainWindowController: NSWindowController, NSMenuItemValidation, NSMenuDele
         
         self.window?.makeFirstResponder(self.listViewController)
         self.window?.delegate = self
-        self.setDefaultWindowPosition(for: self.window!)
         
         self.listViewController.checkForUpdates()
         self.listViewController.releaseNotesViewController = self.releaseNotesViewController
@@ -247,28 +245,8 @@ class MainWindowController: NSWindowController, NSMenuItemValidation, NSMenuDele
 }
 
 extension MainWindowController: NSWindowDelegate {
-    
-    private static let WindowSizeKey = "WindowSizeKey"
-
-    // This will be called before decodeRestorableState
-    func setDefaultWindowPosition(for window: NSWindow) {
-        guard let screen = window.screen?.frame else { return }
-        
-        var rect = NSRect(x: 0, y: 0, width: 360, height: 500)
-        rect.origin.x = screen.width / 2 - rect.width / 2
-        rect.origin.y = screen.height / 2 - rect.height / 2
-        
-        window.setFrame(rect, display: true)
-    }
-    
-    func window(_ window: NSWindow, willEncodeRestorableState state: NSCoder) {
-        state.encode(window.frame, forKey: MainWindowController.WindowSizeKey)
-    }
-    
-    func window(_ window: NSWindow, didDecodeRestorableState state: NSCoder) {
-        window.setFrame(state.decodeRect(forKey: MainWindowController.WindowSizeKey), display: true)
-    }
 	
+	@available(macOS, deprecated: 11.0)
 	func window(_ window: NSWindow, willPositionSheet sheet: NSWindow, using rect: NSRect) -> NSRect {
 		// Always position sheets at the top of the window, ignoring toolbar insets
 		return NSRect(x: rect.minX, y: window.frame.height, width: rect.width, height: rect.height)
