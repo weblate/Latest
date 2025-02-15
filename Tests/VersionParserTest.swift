@@ -31,6 +31,8 @@ final class VersionParserTest: XCTestCase {
 		XCTAssertEqual(VersionParser.parse(versionNumber: "1.2-HEAD-123abc"), "1.2")
 		XCTAssertEqual(VersionParser.parse(versionNumber: "1.2-stable.123abc"), "1.2")
 		XCTAssertEqual(VersionParser.parse(versionNumber: "1.2-latest"), "1.2")
+		XCTAssertEqual(VersionParser.parse(versionNumber: "1.2-release"), "1.2")
+		XCTAssertEqual(VersionParser.parse(versionNumber: "1.2-demo"), "1.2")
 	}
 
 	func testCombinedVersionNumberParsing() {

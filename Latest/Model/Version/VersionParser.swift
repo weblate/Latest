@@ -44,8 +44,10 @@ enum VersionParser {
 		// Build number postfix (1.2 (r1234))
 		.init(pattern: "(.*) \\(r.*\\)", components: [.versionNumber: 1]),
 		
-		// "latest" postfix
+		// word postfixes
+		.init(pattern: "(.*)-release", components: [.versionNumber: 1]),
 		.init(pattern: "(.*)-latest", components: [.versionNumber: 1]),
+		.init(pattern: "(.*)-demo", components: [.versionNumber: 1]),
 
 		// Catch all
 		.init(pattern: ".*", components: [.versionNumber: 0])
