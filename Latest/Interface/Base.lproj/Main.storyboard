@@ -619,6 +619,7 @@
                                                                 <constraint firstItem="DVj-Eq-QBv" firstAttribute="top" secondItem="ZtS-Z9-Cu9" secondAttribute="top" id="zDi-if-AoH"/>
                                                             </constraints>
                                                             <connections>
+                                                                <outlet property="leadingConstraint" destination="WgZ-5m-bcs" id="tdq-6A-5uv"/>
                                                                 <outlet property="titleField" destination="xhF-6m-YCA" id="LiU-5J-UIh"/>
                                                             </connections>
                                                         </tableCellView>
@@ -749,6 +750,7 @@
                                                                 <outlet property="nameTextField" destination="K1m-1T-h1l" id="VjW-hc-6Zq"/>
                                                                 <outlet property="newVersionTextField" destination="JkL-bF-Me7" id="0rh-Zg-BpN"/>
                                                                 <outlet property="supportStateImageView" destination="Bw8-Av-de6" id="9IP-nF-jXC"/>
+                                                                <outlet property="trailingConstraint" destination="yHR-oP-E6l" id="LTD-4L-0F0"/>
                                                                 <outlet property="updateButton" destination="hnT-Rb-bdR" id="BLC-h0-nRi"/>
                                                             </connections>
                                                         </tableCellView>
